@@ -34,6 +34,10 @@ class SearchVC: UIViewController {
         tableView.dataSource = self
         tableView.register(SearchTVC.nib(), forCellReuseIdentifier: SearchTVC.identify)
         tableView.separatorStyle = .none
+        
+        tableView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        tableView.cornerRadius = 20
+
     }
    
 

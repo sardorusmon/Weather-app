@@ -16,8 +16,9 @@ class NotificationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        notesView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        notesView.cornerRadius = 20
     }
 
 

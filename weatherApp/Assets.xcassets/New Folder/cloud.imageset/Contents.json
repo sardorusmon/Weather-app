@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "Screen Shot 2022-11-24 at 09.51.48.png",
+      "filename" : "Group 656.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
@@ -17,5 +17,8 @@
   "info" : {
     "author" : "xcode",
     "version" : 1
+  },
+  "properties" : {
+    "preserves-vector-representation" : true
   }
 }

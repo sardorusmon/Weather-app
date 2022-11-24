@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,30 +11,32 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemsCVC" customModule="weatherApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="163" height="175"/>
+            <rect key="frame" x="0.0" y="0.0" width="102" height="175"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="163" height="175"/>
+                <rect key="frame" x="0.0" y="0.0" width="102" height="175"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-HL-TxS">
-                        <rect key="frame" x="0.0" y="10" width="163" height="155"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Jp2-HL-TxS">
+                        <rect key="frame" x="0.0" y="10" width="102" height="155"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="29º" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-PT-TbA">
-                                <rect key="frame" x="0.0" y="0.0" width="163" height="20.333333333333332"/>
+                                <rect key="frame" x="36.666666666666664" y="0.0" width="28.999999999999993" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-rC-DzF">
-                                <rect key="frame" x="0.0" y="53.666666666666657" width="163" height="48.333333333333329"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun.min.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="k1Y-rC-DzF">
+                                <rect key="frame" x="26" y="55" width="50" height="45.666666666666664"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="7Ed-1U-8b2"/>
+                                    <constraint firstAttribute="width" constant="50" id="ns2-QL-zhE"/>
                                 </constraints>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="58"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="15.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rPT-AI-bxX">
-                                <rect key="frame" x="0.0" y="134.66666666666666" width="163" height="20.333333333333343"/>
+                                <rect key="frame" x="28.333333333333332" y="134.66666666666666" width="45.666666666666671" height="20.333333333333343"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -49,13 +52,13 @@
                 <constraint firstItem="Jp2-HL-TxS" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="s0j-jB-vSO"/>
                 <constraint firstAttribute="trailing" secondItem="Jp2-HL-TxS" secondAttribute="trailing" id="wH4-Xg-IMo"/>
             </constraints>
-            <size key="customSize" width="163" height="175"/>
+            <size key="customSize" width="102" height="175"/>
             <connections>
                 <outlet property="img" destination="k1Y-rC-DzF" id="Rxp-Pf-DSh"/>
                 <outlet property="tempratureLbl" destination="XDO-PT-TbA" id="2D3-5k-q1F"/>
                 <outlet property="timeLbl" destination="rPT-AI-bxX" id="F6V-Uv-skg"/>
             </connections>
-            <point key="canvasLocation" x="-512.2137404580152" y="-58.098591549295776"/>
+            <point key="canvasLocation" x="-558.77862595419845" y="-58.098591549295776"/>
         </collectionViewCell>
     </objects>
     <resources>

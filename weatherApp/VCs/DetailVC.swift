@@ -14,26 +14,26 @@ class DetailVC: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     
     var weatherTableArr : [WeatherForTAbleViewDM] = [
-    WeatherForTAbleViewDM(img: "hum", temperature: "24º", day: "Sep,13"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "20º", day: "Sep,14"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "15º", day: "Sep,15"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "23º", day: "Sep,16"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "21º", day: "Sep,17"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "25º", day: "Sep,18"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "26º", day: "Sep,19"),
-    WeatherForTAbleViewDM(img: "hum", temperature: "30º", day: "Sep,20"),
+    WeatherForTAbleViewDM(img: "cloud", temperature: "24º", day: "Sep,13"),
+    WeatherForTAbleViewDM(img: "cloud2", temperature: "20º", day: "Sep,14"),
+    WeatherForTAbleViewDM(img: "sunny", temperature: "15º", day: "Sep,15"),
+    WeatherForTAbleViewDM(img: "thunder", temperature: "23º", day: "Sep,16"),
+    WeatherForTAbleViewDM(img: "rain", temperature: "21º", day: "Sep,17"),
+    WeatherForTAbleViewDM(img: "rain", temperature: "25º", day: "Sep,18"),
+    WeatherForTAbleViewDM(img: "thunder", temperature: "26º", day: "Sep,19"),
+    WeatherForTAbleViewDM(img: "sunny", temperature: "30º", day: "Sep,20"),
     
     ]
     var weatherCollectArr : [WeatherForCollectionViewDM] = [
-        WeatherForCollectionViewDM(img: "hum", temperature: "24ºC", time: "15.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "23ºC", time: "16.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "22ºC", time: "17.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "21ºC", time: "18.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "20ºC", time: "19.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "18ºC", time: "20.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "16ºC", time: "21.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "14ºC", time: "22.00"),
-        WeatherForCollectionViewDM(img: "hum", temperature: "12ºC", time: "23.00"),
+        WeatherForCollectionViewDM(img: "cloud", temperature: "24ºC", time: "15.00"),
+        WeatherForCollectionViewDM(img: "cloud2", temperature: "23ºC", time: "16.00"),
+        WeatherForCollectionViewDM(img: "thunder", temperature: "22ºC", time: "17.00"),
+        WeatherForCollectionViewDM(img: "sunny", temperature: "21ºC", time: "18.00"),
+        WeatherForCollectionViewDM(img: "rain", temperature: "20ºC", time: "19.00"),
+        WeatherForCollectionViewDM(img: "cloud", temperature: "18ºC", time: "20.00"),
+        WeatherForCollectionViewDM(img: "rain", temperature: "16ºC", time: "21.00"),
+        WeatherForCollectionViewDM(img: "sunny", temperature: "14ºC", time: "22.00"),
+        WeatherForCollectionViewDM(img: "thunder", temperature: "12ºC", time: "23.00"),
     ]
     
     override func viewDidLoad() {
