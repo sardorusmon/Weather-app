@@ -23,22 +23,9 @@ class SearchVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
         setUpTableView()
     }
 
-    func setUpTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
-        tableView.register(SearchTVC.nib(), forCellReuseIdentifier: SearchTVC.identify)
-        tableView.separatorStyle = .none
-        
-        tableView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
-        tableView.cornerRadius = 20
-
-    }
    
 
     
@@ -49,11 +36,28 @@ class SearchVC: UIViewController {
     
     
 }
+
+//MARK: -setUpTableView
+extension SearchVC {
+    func setUpTableView() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.register(SearchTVC.nib(), forCellReuseIdentifier: SearchTVC.identify)
+        tableView.separatorStyle = .none
+        tableView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        tableView.cornerRadius = 20
+
+    }
+}
+
+
+//MARK: -UITableViewDelegate
 extension SearchVC : UITableViewDelegate {
     
     
 }
 
+//MARK: -UITableViewDataSource
 extension SearchVC : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

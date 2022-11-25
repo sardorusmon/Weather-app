@@ -38,11 +38,8 @@ class DetailVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setUpViewS()
-        
     }
-    
     
     @IBAction func backTapped(_ sender: Any) { self.dismiss(animated: true) }
     
@@ -65,11 +62,11 @@ extension DetailVC{
 //MARK: -UICollectionViewDelegate
 extension DetailVC : UICollectionViewDelegate{
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("csdvvv")
     }
     
     
 }
+
 //MARK: -UICollectionViewDataSource
 extension DetailVC : UICollectionViewDataSource{
     
@@ -84,13 +81,14 @@ extension DetailVC : UICollectionViewDataSource{
         return cell
     }
 }
+
 //MARK: -UITableViewDelegate
 extension DetailVC : UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("eeeec")
         tableView.reloadData()
     }
 }
+
 //MARK: -UITableViewDataSource
 extension DetailVC : UITableViewDataSource{
     
